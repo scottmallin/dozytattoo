@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto:wght@400;700&display=swap');
+
+@import "./reset";
+
+body {
+    @apply bg-light;
+    @apply overflow-x-hidden;
+
+    font-size: 18px;
+}
+
+h1, h2 {
+    @apply font-heading;
+    @apply lowercase;
+
+    line-height: 1em;
+}
+
+h1 {
+    @apply text-primary;
+
+    font-size: 8rem;
+    margin-bottom: 40px;
+    margin-left: -5px;
+}
+
+h2 {
+    @apply text-secondary;
+
+    font-size: 3.5rem;
+}
+
+#__layout {  
+    @apply flex;
+    @apply items-center
+}
+
+.grid-container {
+    @apply h-screen;
+    @apply w-screen;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "main main picture"
+}
+
+main {
+    grid-area: main;
+    padding: 100px;
+
+    @apply flex;
+    @apply items-center;
+}
+
+.picture {
+    background-image: url('~assets/images/4.png');
+    background-size: 10vh;
+    grid-area: picture;
+}
+
+.button {
+    @apply bg-secondary;
+    @apply text-white;
+    @apply border;
+    @apply border-secondary;
+
+    padding: 20px 30px;
+    min-width: 220px;
+}
+
+@tailwind utilities;
