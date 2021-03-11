@@ -3,7 +3,7 @@
     <main>
       <div class="content">
         <h1 class="title">
-          dozytattoo
+          dozytattoo 
         </h1>
 
         <h2>

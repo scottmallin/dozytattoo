@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto:wght@400;700&display=swap');
 
 @import "./reset";
+@import './variables';
 
 body {
     @apply bg-light;
@@ -52,7 +53,7 @@ h2 {
 
 main {
     grid-area: main;
-    padding: 100px;
+    padding: $padding;
 
     @apply flex;
     @apply items-center;
